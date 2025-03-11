@@ -84,22 +84,21 @@
     </p>
     <div><script>
         // Create a button element
-        const button = document.createElement('button')
+        const button1 = document.createElement('button')
   
         // Set the button text to 'Can you click me?'
-        button.innerText = 'Move to the next page.'
+        button1.innerText = 'Move to the next page.'
   
-        button.id = 'mainButton'
+        button1.id = 'mainButton'
   
         // Attach the "click" event to your button
-        button.addEventListener('click', () => {
+        button1.addEventListener('click', () => {
           // When there is a "click"
           // it shows an alert in the browser
-          window.open('http://127.0.0.1:5500/about.html','_blank')
-          alert('Opened a new tab.')
+          window.location.href = 'http://127.0.0.1:5500/about.html';
         })
   
-        document.body.appendChild(button)
+        document.body.appendChild(button1)
       </script></div>
     <p>
     <h4 class="circle"></h4>
@@ -146,6 +145,24 @@
     <h4 class="circle"></h4>
     <h4 class="circle"></h4>
     </p>
+    <p><div><script>
+        // Create a button element
+        const button2 = document.createElement('button')
+  
+        // Set the button text to 'Can you click me?'
+        button2.innerText = 'Game.'
+  
+        button2.id = 'mainButton'
+  
+        // Attach the "click" event to your button
+        button2.addEventListener('click', () => {
+          // When there is a "click"
+          // it shows an alert in the browser
+          window.location.href = 'http://127.0.0.1:5500/GetToSchool6/index.html';
+        })
+  
+        document.body.appendChild(button2)
+      </script></div></p>
 </body>
 
 </html>

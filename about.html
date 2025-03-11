@@ -34,6 +34,11 @@
         min-width: 500pxs;
         min-height: 150px;
     }
+    #image {
+        width: 100px;
+        margin: 5px 5px;
+        border: 2px dotted;
+    }
 </style>
 
 <body>
@@ -45,6 +50,8 @@
             Hello, my name is Oliver and I am a freshman at York Tech. I am currently working on this for a project. I
             am trying my best to learn how to code at the moment so please excuse if it doesn't really work at first.
         </p>
+        <img src="https://th.bing.com/th/id/OIP.DbA7_sgVYhfgqUIrYopxXwHaHR?rs=1&pid=ImgDetMain"
+            alt="Image could not load." id="image">
     </div>
     <div>
         <script>
@@ -60,9 +67,7 @@
             button.addEventListener('click', () => {
                 // When there is a "click"
                 // it shows an alert in the browser
-                window.open('http://127.0.0.1:5500/index.html', '_blank')
-                alert('Opened a new tab.')
-            })
+                window.location.href = 'http://127.0.0.1:5500/index.html'; })
 
             document.body.appendChild(button)
         </script>
