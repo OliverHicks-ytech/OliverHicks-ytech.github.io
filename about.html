@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutMe</title>
+</head>
+<style>
+    body {
+        background-color: antiquewhite;
+        border: 5px dotted;
+        border-radius: 10px;
+    }
+
+    #title {
+        background-color: gray;
+        text-align: center;
+        border: 5px solid;
+        border-radius: 10px;
+        margin: auto;
+        padding: auto;
+    }
+
+    .paragraph {
+        flex: content;
+        align-content: center;
+        margin: 5px;
+        border-radius: 10px;
+        border: 2px solid;
+        padding: 3px;
+        font-size: 30px;
+        width: 750px;
+        min-width: 500pxs;
+        min-height: 150px;
+    }
+</style>
+
+<body>
+    <div>
+        <h1 id="title">About Me</h1>
+    </div>
+    <div>
+        <p class="paragraph">
+            Hello, my name is Oliver and I am a freshman at York Tech. I am currently working on this for a project. I
+            am trying my best to learn how to code at the moment so please excuse if it doesn't really work at first.
+        </p>
+    </div>
+    <div>
+        <script>
+            // Create a button element
+            const button = document.createElement('button')
+
+            // Set the button text to 'Can you click me?'
+            button.innerText = 'Move back to the previous page.'
+
+            button.id = 'mainButton'
+
+            // Attach the "click" event to your button
+            button.addEventListener('click', () => {
+                // When there is a "click"
+                // it shows an alert in the browser
+                window.open('http://127.0.0.1:5500/index.html', '_blank')
+                alert('Opened a new tab.')
+            })
+
+            document.body.appendChild(button)
+        </script>
+    </div>
+</body>
+
+</html>
